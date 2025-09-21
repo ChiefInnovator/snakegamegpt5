@@ -8,67 +8,16 @@
     html, body {
       height: 100%;
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: radial-gradient(1200px 800px at 20% 10%, rgba(124,0,255,0.1), transparent 60%),
-                  radial-gradient(900px 700px at 80% 30%, rgba(0,246,255,0.08), transparent 60%),
-                  linear-gradient(180deg, #050510, #02010a);
-      color: #e6e6ff;
-      display: flex;
-      flex-direction: column;
-    }
-    header {
-      padding: 16px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(20px, 4vw, 36px);
-      letter-spacing: 0.5px;
-    }
-    p {
-      margin: 4px 0 0;
-      opacity: 0.85;
-      font-size: clamp(14px, 2vw, 16px);
-    }
-    .frame-wrap {
-      flex: 1;
-      display: flex;
-      padding: 0 16px 16px;
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
     }
     iframe {
-      border: 1px solid rgba(124,0,255,0.35);
-      border-radius: 14px;
-      box-shadow: 0 12px 32px rgba(10,10,40,0.55);
-      background: #050510;
-      flex: 1;
-      min-height: 480px;
+      border: 0;
       width: 100%;
-    }
-    .fallback {
-      text-align: center;
-      padding: 24px;
-      font-size: 15px;
-    }
-    a {
-      color: #7c9cff;
+      height: 100%;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Neon Snake — GPT-5 Edition</h1>
-    <p>Play the neon-infused Snake experience directly on GitHub Pages.</p>
-  </header>
-  <div class="frame-wrap">
-    <iframe src="neon_snake_gpt5.html" title="Neon Snake" allow="gamepad *" loading="lazy">
-      <div class="fallback">
-        <p>Your browser does not support iframes.</p>
-        <p><a href="neon_snake_gpt5.html">Open the game in a new tab instead.</a></p>
-      </div>
-    </iframe>
-  </div>
+  <iframe src="neon_snake_gpt5.html" title="Neon Snake" allow="gamepad *"></iframe>
 </body>
 </html>
